@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+{% block content %}
+<h1>{{ title }}</h1>
+
+<ul>
+    {% for p in members %}
+    <li>
+        <h2>{{p.name}}</h2>
+        <p>{{p.initiator}}</p>
+        <hr>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+</html>

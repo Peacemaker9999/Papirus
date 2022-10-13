@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link type="text/css" href="{% static 'papirus/css/main_page.css' %}" rel="stylesheet"/>
+    <link type="text/css" href="{% static 'papirus/css/footer_main_page.css' %}" rel="stylesheet"/>
+</head>
+<body>
+<div class="sidenav">
+    <a href="{% url 'add_document' %}">Добавить документ</a>
+    <a href="#">Список документов</a>
+</div>
+</body>
+<footer>
+    <a>&copy; 2022 Копирование и распространение информации с данного сайта строго запрещено.</a>
+</footer>
+</html>

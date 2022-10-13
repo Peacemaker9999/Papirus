@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link type="text/css" href="{% static 'papirus/css/main_page.css' %}" rel="stylesheet"/>
+</head>
+<body>
+<ul>
+    {% for p in posts %}
+    <li>
+        <h2>{{p.name}}</h2>
+        <p>{{p.initiator}}</p>
+        <hr>
+    </li>
+    {% endfor %}
+</ul>
+</body>
+<footer>
+    <a> FOOTER </a>
+</footer>
+</html>
